@@ -29,21 +29,27 @@ The normalize_and_scale function normalizes and scales numerical features to ens
 The encode_categorical_features function performs one-hot encoding for categorical features (source, browser, sex).
 
 ## Usage
-Import the Modules:
+
+### Import the Modules:
 
 python
-from data_processing import (handle_missing_values, clean_data, univariate_analysis, 
+```
+from eda import (handle_missing_values, clean_data, univariate_analysis, 
                              bivariate_analysis, merge_datasets, feature_engineering, 
                              normalize_and_scale, encode_categorical_features)
 import pandas as pd
-Load the Data:
+```
 
+### Load the Data:
+```
 python
 fraud_df = pd.read_csv('Fraud_Data.csv')
 ip_df = pd.read_csv('IpAddress_to_Country.csv')
-Preprocessing Steps:
+```
+### Preprocessing Steps:
 
 python
+```
 fraud_df = handle_missing_values(fraud_df)
 fraud_df = clean_data(fraud_df)
 univariate_analysis(fraud_df)
@@ -52,10 +58,12 @@ merged_data = feature_engineering(merged_data)
 bivariate_analysis(merged_data)
 merged_data = encode_categorical_features(merged_data)
 merged_data = normalize_and_scale(merged_data)
-View Processed Data:
-
+```
+## View Processed Data:
+```
 python
 print(merged_data.head())
+```
 
 ## Conclusion
 This script performs comprehensive data preprocessing for fraud detection analysis, making the data suitable for machine learning algorithms.
