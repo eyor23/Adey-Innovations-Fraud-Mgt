@@ -3,3 +3,4 @@ advenv
 .env
 .vscode
 scripts/__pycache__
+notebooks/mlruns/
