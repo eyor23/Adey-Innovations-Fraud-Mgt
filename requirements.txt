@@ -1,1 +1,1 @@
-pip install pandas numpy matplotlib scikit mlflow
+pip install pandas numpy matplotlib scikit mlflow flask, joblib, lime, shap
