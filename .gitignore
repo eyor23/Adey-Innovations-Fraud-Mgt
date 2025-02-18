@@ -4,3 +4,4 @@ advenv
 .vscode
 scripts/__pycache__
 notebooks/mlruns/
+model_serve/__pycache__
